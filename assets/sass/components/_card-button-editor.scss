@@ -1,0 +1,23 @@
+// ------------------------------------
+// Components > Card Button / Editor
+// ------------------------------------
+
+.kg-button-card {
+  display: flex;
+
+  &.kg-align-center {
+    justify-content: center;
+  }
+
+  &.kg-align-left {
+    justify-content: start;
+  }
+}
+
+.kg-btn,
+.kg-btn-accent {
+  font-size: $font-size-medium !important;
+  font-family: $font-sans-serif !important;
+  line-height: $line-height-base !important;
+  border-bottom: none !important;
+}

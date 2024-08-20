@@ -1,0 +1,27 @@
+// ------------------------------------
+// Components > Card Toggle / Editor
+// ------------------------------------
+
+.c-content {
+  .kg-toggle-card {
+
+    .kg-toggle-heading {
+      align-items: center;
+    }
+
+    .kg-toggle-card-icon {
+      width: auto;
+      margin-top: 0;
+      padding-right: 0;
+      cursor: pointer;
+    }
+
+    &[data-kg-toggle-state] .kg-toggle-content {
+      transition: none;
+
+      p, ul {
+        font-size: $font-size-base;
+      }
+    }
+  }
+}

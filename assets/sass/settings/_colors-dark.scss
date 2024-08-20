@@ -1,0 +1,40 @@
+// *----------------------------------*\
+//  Settings > Colors Dark
+// *----------------------------------*/
+
+// Colors
+$color-brand:   #FFFFFF;
+$color-white:   #FFFFFF;
+$color-black:   #000000;
+$color-text:    #FFFFFF;
+$color-gray:    #738A94;
+$color-error:   #BF3157;
+$color-success: #097756;
+
+// Background Colors
+$bg-color:        #263238;
+$bg-gray:         #212A2E;
+$bg-white:        $color-white;
+$bg-dark-opacity: rgba($color-black, .1);
+
+// Border
+$color-border: #333F44;
+
+// Links
+$color-link: $color-text;
+
+// Buttons
+$btn-bg:       $color-brand;
+$btn-bg-hover: $color-brand;
+
+$btn-color:       $color-gray;
+$btn-color-hover: $color-gray;
+
+$btn-border-color:       $color-brand;
+$btn-border-color-hover: $color-brand;
+
+// Code Block
+$bg-code-block: #F6F9FC;
+
+$bg-code-inline:  $bg-gray;
+$color-code-inline: $color-text;

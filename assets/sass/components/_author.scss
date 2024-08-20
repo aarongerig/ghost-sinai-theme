@@ -1,0 +1,60 @@
+/*------------------------------------*\
+  Components > Author
+\*------------------------------------*/
+
+.c-author {
+  text-align: center;
+  padding: double($base-spacing-unit) 0;
+  margin-bottom: double($base-spacing-unit);
+
+  &__media {
+    margin: 0 auto;
+    margin-bottom: half($base-spacing-unit);
+    background-color: $bg-gray;
+    border-radius: 100%;
+    width: quadruple($base-spacing-unit) + double($base-spacing-unit);
+    height: quadruple($base-spacing-unit) + double($base-spacing-unit);
+  }
+
+  &__image {
+    object-fit: cover;
+    border-radius: 100%;
+    border: quarter($base-spacing-unit) solid $bg-gray;
+    width: quadruple($base-spacing-unit) + double($base-spacing-unit);
+    height: quadruple($base-spacing-unit) + double($base-spacing-unit);
+  }
+
+  &__title {
+    margin-bottom: half($base-spacing-unit);
+    font-size: $font-size-base;
+    font-weight: $font-weight-medium;
+  }
+
+  &__bio {
+    margin-bottom: 0;
+    font-size: $font-size-medium;
+  }
+}
+
+.c-author__links {
+  display: flex;
+  justify-content: center;
+  margin-top: $base-spacing-unit;
+
+  &-item {
+    display: flex;
+    align-items: center;
+    font-size: $font-size-tiny;
+    text-transform: uppercase;
+    letter-spacing: $global-letter-spacing;
+  }
+
+  &-icon {
+    vertical-align: bottom;
+    transition: $global-transition;
+
+    @include attention() {
+      fill: $color-brand;
+    }
+  }
+}

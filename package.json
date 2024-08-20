@@ -1,0 +1,99 @@
+{
+  "name": "sinai",
+  "description": "Premium Ghost CMS Theme",
+  "demo": "https://sinai.aspirethemes.com/",
+  "docs": "https://aspirethemes.com/docs/sinai",
+  "version": "1.2.4",
+  "engines": {
+    "ghost": ">=5.0.0"
+  },
+  "keywords": [
+    "ghost-theme"
+  ],
+  "scripts": {
+    "postinstall": "bower install"
+  },
+  "dependencies": {
+    "clipboard": "^2.0.11",
+    "concat": "^3.0.0",
+    "evil-icons": "^1.10.1",
+    "fs": "0.0.2",
+    "gulp-autoprefixer": "^8.0.0",
+    "gulp-clean-css": "^4.3.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-jshint": "^2.1.0",
+    "gulp-rename": "^2.0.0",
+    "gulp-replace": "^1.1.4",
+    "gulp-size": "^4.0.1",
+    "gulp-uglify": "^3.0.2",
+    "gulp-util": "^3.0.7",
+    "jshint": "^2.13.6",
+    "jshint-stylish": "^2.2.1",
+    "lazysizes": "^5.3.2",
+    "normalize.css": "^8.0.1",
+    "primer-tooltips": "^2.0.0",
+    "prismjs": "^1.29.0",
+    "run-sequence": "^2.2.1"
+  },
+  "author": {
+    "name": "Aspire Themes",
+    "email": "aspirethemes@gmail.com",
+    "url": "https://aspirethemes.com/"
+  },
+  "config": {
+    "custom": {
+      "enable_search": {
+        "type": "boolean",
+        "default": true
+      },
+      "instagram_page": {
+        "type": "text",
+        "default": ""
+      },
+      "pinterest_page": {
+        "type": "text",
+        "default": ""
+      },
+      "youtube_page": {
+        "type": "text",
+        "default": ""
+      },
+      "tag_slugs_for_home_sections": {
+        "type": "text",
+        "group": "homepage"
+      }
+    },
+    "posts_per_page": 12,
+    "card_assets": {
+      "exclude": [
+        "bookmark",
+        "gallery",
+        "blockquote"
+      ]
+    },
+    "image_sizes": {
+      "xs": {
+        "width": 176
+      },
+      "sm": {
+        "width": 192
+      },
+      "md": {
+        "width": 385
+      },
+      "lg": {
+        "width": 770
+      },
+      "xl": {
+        "width": 1540
+      }
+    }
+  },
+  "devDependencies": {
+    "gulp": "^4.0.2",
+    "gulp-sass": "^5.1.0",
+    "gulp-zip": "^5.1.0",
+    "node-sass": "^8.0.0",
+    "sass": "^1.58.3"
+  }
+}

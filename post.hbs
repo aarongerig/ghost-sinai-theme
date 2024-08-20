@@ -1,0 +1,38 @@
+{{!< default}}
+
+{{#post}}
+
+{{> post-hero }}
+
+<div class='o-wrapper'>
+
+  <div class='o-grid'>
+    <div class='o-grid__col o-grid__col--center o-grid__col--2-3-m'>
+      <article class='c-{{ post_class }}'>
+        <div class='c-content'>
+          {{ content }}
+        </div>
+
+        {{#if access}}
+          <div class='o-grid'>
+            <div class='o-grid__col o-grid__col--4-4-s'>
+              {{> share }}
+            </div>
+          </div>
+
+          <hr>
+
+          {{> comments/ghost }}
+        {{else}}
+          {{> post-upgrade-cta }}
+        {{/if}}
+      </article>
+
+    </div>
+  </div>
+
+</div>
+
+{{/post}}
+
+{{> related-posts}}

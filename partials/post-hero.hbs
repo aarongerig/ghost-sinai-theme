@@ -1,0 +1,38 @@
+<div class='c-post-hero'>
+  <div class='o-grid'>
+    <div class='o-grid__col o-grid__col--4-4-s {{#if feature_image}} o-grid__col--2-4-l {{/if}} {{#unless feature_image}} o-grid__col--2-3-m o-grid__col--center {{/unless}}'>
+      <div class='c-post-hero__content {{#unless feature_image}} c-post-hero__content--no-image {{/unless}}'>
+        {{#if tags}}
+          <div class='c-post-hero__tags'>
+            {{ tags separator=' / ' }}
+          </div>
+        {{/if}}
+        <h1 class='c-post-hero__title'>{{ title }}</h1>
+        {{#is 'post'}}
+          <div class='c-post-hero__meta'>
+            <time datetime='{{ date format='YYYY-MM-DD' }}'>{{ date format='LL' locale='de-ch' }}</time> •
+            <span>{{ reading_time minute=(t '1 min read') minutes=(t '% min read') }}</span> •
+            Geschrieben von <span class='c-post-hero__author'>{{authors separator=" / "}}</span>
+          </div>
+        {{/is}}
+      </div>
+    </div>
+
+    {{#if feature_image}}
+      <div class='o-grid__col o-grid__col--4-4-s o-grid__col--2-4-l'>
+        <div class='c-post-hero__media'>
+          <img
+            alt='{{ title }}'
+            class='c-post-hero__image js-fadein'
+            srcset='
+              {{ img_url feature_image size='md' }} 385w,
+              {{ img_url feature_image size='lg' }} 770w,
+              {{ img_url feature_image size='xl' }} 1540w'
+            sizes='(min-width: 1024px) 1000px, (min-width: 640px) 600px, 100vw'
+            src='{{ img_url feature_image size='lg' }}'
+          >
+        </div>
+      </div>
+    {{/if}}
+  </div>
+</div>

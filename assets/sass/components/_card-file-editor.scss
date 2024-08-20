@@ -1,0 +1,13 @@
+// ------------------------------------
+// Components > Card File / Editor
+// ------------------------------------
+
+.c-content .kg-file-card {
+  a.kg-file-card-container {
+
+    @include attention() {
+      color: inherit;
+      background-color: transparent;
+    }
+  }
+}

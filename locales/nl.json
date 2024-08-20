@@ -1,0 +1,44 @@
+{
+  "More Posts": "Meer berichten",
+  "Loading": "het laden",
+  "Page Not Found": "Pagina niet gevonden",
+  "Recent Posts": "recente berichten",
+  "Home Page": "Startpagina",
+  "Featured Post": "Aanbevolen bericht",
+
+  "Share on Twitter": "Delen op Twitter",
+  "Share on Facebook": "Delen op Facebook",
+  "Share on LinkedIn": "Delen op LinkedIn",
+  "Share on Pinterest": "Delen op Pinterest",
+  "Share via Email": "Deel via E-mail",
+  "Copy link": "Kopieer link",
+  "Link copied to clipboard": "Link gekopieerd naar klembord",
+
+  "Tags": "Tags",
+  "Navigation": "Navigatie",
+  "Newsletter": "Nieuwsbrief",
+  "Published with {ghostLink} & {themeLink}": "Gepubliceerd met {ghostLink} & {themeLink}",
+
+  "Comments": "Comments",
+  "You Might Be Interested In": "U zou geïnteresseerd kunnen zijn in",
+
+  "1 min read": "1 minuut lezen",
+  "% min read": "% minuut lezen",
+
+  "Account": "Account",
+  "Log In": "Aanmelden",
+  "Subscribe": "abonneren",
+  "Your email": "jouw e-mailadres",
+  "Please check your inbox and click the link to complete the login.": "Controleer uw inbox en klik op de link om het inloggen te voltooien.",
+  "Please check your inbox and click the link to confirm your subscription.": "Controleer je inbox en klik op de link om je abonnement te bevestigen.",
+  "Please enter a valid email address!": "Gelieve een geldig e-mailadres in te geven!",
+  "An error occurred, please try again later.": "Er is een fout opgetreden, probeer het later opnieuw.",
+
+  "Already have an account?": "Heb je al een account?",
+  "Don't have an account yet?": "Heb je nog geen account?",
+
+  "This post is for paying subscribers only": "Dit bericht is alleen voor betalende abonnees",
+  "This post is for subscribers only": "Dit bericht is alleen voor abonnees",
+  "This post is for subscribers on the ": "Dit bericht is voor abonnees op de ",
+  "Upgrade your account": "Je account upgraden"
+}

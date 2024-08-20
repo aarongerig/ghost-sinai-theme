@@ -1,0 +1,27 @@
+{{#if @custom.tag_slugs_for_home_sections}}
+  {{#get 'tags' filter='slug:[{{@custom.tag_slugs_for_home_sections}}]'}}
+    {{#foreach tags}}
+      <div class='c-teaser-wrapper o-grid__col o-grid__col--4-4-s o-grid__col--2-4-m o-grid__col--1-3-l'>
+        <div class='o-grid'>
+          <div class='o-grid__col o-grid__col--full'>
+            <div class='c-title-bar'>
+              <h3 class='c-title-bar__title'>
+                <a href='{{ url }}' class='u-font-size-small u-color-gray'>{{ name }}</a>
+              </h3>
+            </div>
+          </div>
+
+          <div class='o-grid__col'>
+            {{#get 'posts' filter='tags:{{slug}}' include='tags,authors' limit='4' as |posts|}}
+              {{#if posts}}
+                {{#foreach posts}}
+                  {{> teaser }}
+                {{/foreach}}
+              {{/if}}
+            {{/get}}
+          </div>
+        </div>
+      </div>
+    {{/foreach}}
+  {{/get}}
+{{/if}}

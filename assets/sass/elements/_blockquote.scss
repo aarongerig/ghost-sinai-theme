@@ -1,0 +1,14 @@
+/*------------------------------------*\
+  Elements > Blockquote
+\*------------------------------------*/
+
+blockquote {
+  text-align: center;
+  font-size: $font-size-h3;
+  font-weight: $font-weight-medium;
+
+  @include mq($from: desktop) {
+    font-size: $font-size-h2;
+    font-weight: $font-weight-bold;
+  }
+}

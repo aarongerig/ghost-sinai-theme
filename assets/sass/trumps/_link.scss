@@ -1,0 +1,11 @@
+/*------------------------------------*\
+  Trumps > Links
+\*------------------------------------*/
+
+.u-link {
+  text-decoration: underline;
+
+  @include attention() {
+    text-decoration: underline;
+  }
+}

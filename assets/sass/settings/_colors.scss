@@ -1,0 +1,40 @@
+// *----------------------------------*\
+//  Settings > Colors
+// *----------------------------------*/
+
+// Colors
+$color-brand:   #000000 !default;
+$color-white:   #FFFFFF !default;
+$color-black:   #000000 !default;
+$color-text:    #222222 !default;
+$color-gray:    #5D738D !default;
+$color-error:   #BF3157 !default;
+$color-success: #097756 !default;
+
+// Background Colors
+$bg-color:        $color-white !default;
+$bg-gray:         #F6F9FC !default;
+$bg-white:        $color-white !default;
+$bg-dark-opacity: rgba($color-black, .1);
+
+// Border
+$color-border: #EBF1F8 !default;
+
+// Links
+$color-link: $color-text;
+
+// Buttons
+$btn-bg:       $color-white !default;
+$btn-bg-hover: $color-brand !default;
+
+$btn-color:       $color-gray !default;
+$btn-color-hover: $color-white !default;
+
+$btn-border-color:       $color-border !default;
+$btn-border-color-hover: $color-brand !default;
+
+// Code Block
+$bg-code-block: $bg-gray !default;
+
+$bg-code-inline:  $bg-gray !default;
+$color-code-inline: $color-text !default;

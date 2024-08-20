@@ -1,0 +1,58 @@
+<footer class='c-footer'>
+  <div class='o-grid'>
+
+    {{#get 'tags' limit='all'}}
+      {{#if tags}}
+        <div class='o-grid__col o-grid__col--4-4-s o-grid__col--2-4-m o-grid__col--1-3-l'>
+          <p class='c-footer__headline'>{{t 'Tags' }}</p>
+
+          <ul class='c-footer-list o-plain-list'>
+            {{#foreach tags}}
+              <li><a href='{{ url }}'>{{ name }}</a></li>
+            {{/foreach}}
+          </ul>
+        </div>
+      {{/if}}
+    {{/get}}
+
+    {{#if @site.secondary_navigation}}
+      <div class='o-grid__col o-grid__col--4-4-s o-grid__col--2-4-m o-grid__col--1-3-l'>
+        <p class='c-footer__headline'>{{t 'Navigation' }}</p>
+
+        <ul class='c-footer-list o-plain-list'>
+          {{ navigation type='secondary' }}
+        </ul>
+      </div>
+    {{/if}}
+
+    {{#unless @member}}
+      {{#if @site.members_enabled}}
+        {{#unless @site.members_invite_only}}
+          <div class='o-grid__col o-grid__col--4-4-s o-grid__col--2-4-m o-grid__col--1-3-l'>
+            <p class='c-footer__headline'>{{t 'Newsletter' }}</p>
+            {{> subscribe-form inputLabel='subscribe-email-footer'}}
+          </div>
+        {{/unless}}
+      {{/if}}
+    {{/unless}}
+
+    <div class='o-grid__col o-grid__col--full'>
+      <div class='c-footer__bottom'>
+        <div class='o-grid'>
+
+          <div class='o-grid__col o-grid__col--4-4-s o-grid__col--2-4-m'>
+            <div class='u-font-size-tiny c-footer__copyright'>
+              &copy; {{ date format='YYYY' }} {{ @site.title }}
+            </div>
+          </div>
+
+          <div class='o-grid__col o-grid__col--4-4-s o-grid__col--2-4-m'>
+            {{> social-icons }}
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+  </div>
+</footer>

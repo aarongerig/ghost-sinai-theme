@@ -1,0 +1,49 @@
+/*------------------------------------*\
+  Components > Subscribe Form
+\*------------------------------------*/
+
+.c-subscribe-form {
+  background-color: $bg-white;
+  border: 1px solid $color-black;
+  display: flex;
+  flex-wrap: wrap;
+
+  .form-group {
+    flex: 8;
+    display: flex;
+  }
+
+  &__btn {
+    flex: 3;
+    border-left: 1px solid $color-black;
+
+    @include attention() {
+      border-left-color: $color-black;
+    }
+  }
+
+  &__input[type='email'] {
+    padding-left: ($base-spacing-unit + half($base-spacing-unit));
+    border: 0;
+    margin: 0;
+    min-width: 1px;
+
+    &:focus {
+      border-color: transparent;
+    }
+  }
+
+  & ~ .u-alert {
+    display: none;
+  }
+
+  &.loading .c-btn {
+    @extend .c-btn--loading;
+  }
+
+  &.success ~ .u-alert--success,
+  &.invalid ~ .u-alert--invalid,
+  &.error   ~ .u-alert--error  {
+    display: block;
+  }
+}

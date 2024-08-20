@@ -1,0 +1,10 @@
+/*------------------------------------*\
+  Components > Pagination
+\*------------------------------------*/
+
+.c-pagination {
+  text-align: center;
+  background-color: $bg-gray;
+  margin-bottom: double($base-spacing-unit);
+  padding: $base-spacing-unit + half($base-spacing-unit);
+}

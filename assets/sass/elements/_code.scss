@@ -1,0 +1,41 @@
+/*------------------------------------*\
+  Elements > code & pre
+\*------------------------------------*/
+
+pre {
+  padding: double($base-spacing-unit);
+}
+
+pre,
+code {
+  overflow: auto;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+  word-break: break-all;
+  font-family: $font-monospace;
+  font-size: $font-size-medium;
+  background-color: $bg-code-block;
+}
+
+p code,
+li code {
+  color: $color-code-inline;
+  background-color: $bg-code-inline;
+  padding: half(quarter($base-spacing-unit)) quarter($base-spacing-unit);
+}
+
+// Prism.js Customization
+
+pre[class*='language-'] {
+  padding: double($base-spacing-unit);
+  margin-bottom: 0;
+  margin-top: double($base-spacing-unit);
+}
+
+code[class*='language-'],
+pre[class*='language-'] {
+  white-space: pre-wrap;
+  word-break: break-all;
+  line-height: inherit;
+  background-color: $bg-code-block;
+}

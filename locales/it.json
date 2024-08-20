@@ -1,0 +1,44 @@
+{
+  "More Posts": "Altri articoli",
+  "Loading": "Caricamento",
+  "Page Not Found": "Pagina non trovata",
+  "Recent Posts": "articoli recenti",
+  "Home Page": "Home Page",
+  "Featured Post": "Post in evidenza",
+
+  "Share on Twitter": "Condividi su Twitter",
+  "Share on Facebook": "Condividi su Facebook",
+  "Share on LinkedIn": "Condividi su LinkedIn",
+  "Share on Pinterest": "Condividi su Pinterest",
+  "Share via Email": "Condividi via email",
+  "Copy link": "Copia link",
+  "Link copied to clipboard": "Link copiato negli appunti",
+
+  "Tags": "Tags",
+  "Navigation": "Navigazione",
+  "Newsletter": "notiziario",
+  "Published with {ghostLink} & {themeLink}": "Pubblicato con {ghostLink} & {themeLink}",
+
+  "Comments": "Commenti",
+  "You Might Be Interested In": "Potresti essere interessato a",
+
+  "1 min read": "1 minuto leggi",
+  "% min read": "% minuto leggi",
+
+  "Account": "account",
+  "Log In": "Registrati",
+  "Subscribe": "sottoscrivi",
+  "Your email": "Tu correo electrónico",
+  "Please check your inbox and click the link to complete the login.": "Controlla la tua casella di posta e fai clic sul link per completare il login.",
+  "Please check your inbox and click the link to confirm your subscription.": "Controlla la tua casella di posta e fai clic sul link per confermare l'abbonamento.",
+  "Please enter a valid email address!": "Si prega di inserire un indirizzo email valido!",
+  "An error occurred, please try again later.": "Si è verificato un errore, riprova più tardi.",
+
+  "Already have an account?": "Hai già un account?",
+  "Don't have an account yet?": "Non hai ancora un conto?",
+
+  "This post is for paying subscribers only": "Questo post è solo per abbonati paganti",
+  "This post is for subscribers only": "Questo post è solo per gli abbonati",
+  "This post is for subscribers on the ": "Questo post è per gli abbonati su ",
+  "Upgrade your account": "Aggiorna il tuo account"
+}
